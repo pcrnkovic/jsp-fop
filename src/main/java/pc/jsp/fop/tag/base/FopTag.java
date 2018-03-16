@@ -84,16 +84,15 @@ public abstract class FopTag implements Tag {
     }
 
     @Override
-    public void setParent(Tag parent) {        
-        resetAttributes();
+    public void setParent(Tag parent) {
         this.parent = parent;
-    }
-    
-    private void resetAttributes() {
         rendered=true;
         attributes.clear();
+        initAttributes();
     }
-
+    
+    protected void initAttributes() {}
+    
     @Override
     public void release() {}
 
