@@ -46,9 +46,13 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
 /src/test/
 /target/classes/
-/target/generated-sources/
-/target/maven-archiver/
-/target/surefire/
-/target/test-classes/
+
+#/src/test/
+#/target/classes/
+#/target/generated-sources/
+#/target/maven-archiver/
+#/target/surefire/
+#/target/test-classes/
