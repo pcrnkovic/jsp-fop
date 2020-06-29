@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.pc</groupId>
+    <groupId>io.github.pcrnkovic</groupId>
     <artifactId>jsp-fop</artifactId>
     <version>0.2</version>
     <packaging>jar</packaging>
@@ -35,8 +35,8 @@
     </properties>
     
     <build>
-        <plugins>
-            
+        <finalName>${project.artifactId}</finalName>
+        <plugins>           
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.1.0</version>              
@@ -49,6 +49,42 @@
                 <configuration>
                     <outputDirectory>${basedir}</outputDirectory>
                 </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <jarOutputDirectory>${basedir}</jarOutputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+                
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             
         </plugins>
