@@ -4,7 +4,7 @@ The idea of jsp-fop is to provide a simple and fast reporting tool by combining 
 ## Who is this for?
 This is for Java developers who are developing in Servlet environment and are required to create reports.
 ## How to use it?
-Include jsp-fop-[*version*].jar in your Java web project and use `https://github.com/pcrnkovic/jsp-fop` namespace in your JSP document/page. 
+Include jsp-fop.jar in your Java web project and use `https://github.com/pcrnkovic/jsp-fop` namespace in your JSP document/page. 
 The example of JSP document is as follows:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
