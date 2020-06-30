@@ -2,7 +2,7 @@
 <taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
     <tlib-version>1.0</tlib-version>
     <short-name>jsp-fo</short-name>
-    <uri>http://www.pc.hr/jsp-fop</uri>
+    <uri>https://github.com/pcrnkovic/jsp-fop</uri>
     <tag>
         <name>basicLink</name>
         <tag-class>com.pc.jspfop.tag.BasicLink</tag-class>
