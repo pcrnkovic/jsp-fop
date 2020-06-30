@@ -6,7 +6,15 @@
     <version>0.2</version>
     <packaging>jar</packaging>
     
+    <name>${project.artifactId}</name>
     
+    <developers>
+        <developer>
+            <id>pc</id>
+            <name>Pavle Crnkovic</name>
+            <organizationUrl>https://github.com/pcrnkovic/</organizationUrl>
+        </developer>
+    </developers>
     
     <dependencies>
         <dependency>

@@ -4,10 +4,11 @@ The idea of jsp-fop is to provide a simple and fast reporting tool by combining 
 ## Who is this for?
 This is for Java developers who are developing in Servlet environment and are required to create reports.
 ## How to use it?
-Include jsp-fop-[*version*].jar in your Java web project and use `http://www.pc.hr/jsp-fop` namespace in your JSP document/page. The example of JSP document is as follows:
+Include jsp-fop-[*version*].jar in your Java web project and use `https://github.com/pcrnkovic/jsp-fop` namespace in your JSP document/page. 
+The example of JSP document is as follows:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-<fo:root xmlns:fo="http://www.pc.hr/jsp-fop">
+<fo:root xmlns:fo="https://github.com/pcrnkovic/jsp-fop">
 
   <fo:layoutMasterSet>
     <fo:simplePageMaster masterName="pages">
@@ -47,7 +48,7 @@ As you can see from the above, every jsp-fop tag/attribute (`xxxXxx`) transforms
 Besides literal (and valid XSL-FO) values, jsp-fop tag attribute can also take runtime expressions (attributeName="${*expression*}"), which is the main reason why this library was created. In addition to standard *XSL-FO*-corresponding attributes, every tag can take `rendered` attribute which takes literal/rtexpression `boolean` value (default is `true`). The purpose of `rendered` attribute is to determine whether tag will be included in XSL-FO output or not. For instance the result of the following JSP document
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-<fo:root xmlns:fo="http://www.pc.hr/jsp-fop">
+<fo:root xmlns:fo="https://github.com/pcrnkovic/jsp-fop">
 
   <fo:layoutMasterSet>
     <fo:simplePageMaster masterName="pages">
