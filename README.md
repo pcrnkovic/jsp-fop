@@ -82,7 +82,7 @@ will be
 </root>
 ```
 ## PDF filter
-Most likely, the report which is served to the end-user should be in human-readable format like PDF. This is the point where you might find Servlet filter defined in `pc.jsp.fop.filter.FopPdfFilter` class useful. To properly configure this filter you must specify `fop_config_path_param` (`FopPdfFilter.FOP_CONFIG_PATH_PARAM`) initialisation parameter. The value of this parameter should be path to your [Apache FOP configuration file](https://xmlgraphics.apache.org/fop/2.2/configuration.html). For instance you have the following situation: path in your web app to your FOP configuration file is /WEB-INF/fop-config.xml and the path to the directory where you keep your JSP documents/pages you are using for reports is /reports/. The following filter configuration in your web.xml
+Most likely, the report which is served to the end-user should be in human-readable format like PDF. This is the point where you might find Servlet filter classes defined in `io.github.pcrnkovic.jspfop.filter` package useful. To properly configure this filter you must specify `fop_config_path_param` (`FopPdfFilter.FOP_CONFIG_PATH_PARAM`) initialisation parameter. The value of this parameter should be path to your [Apache FOP configuration file](https://xmlgraphics.apache.org/fop/2.2/configuration.html). For instance you have the following situation: path in your web app to your FOP configuration file is /WEB-INF/fop-config.xml and the path to the directory where you keep your JSP documents/pages you are using for reports is /reports/. The following filter configuration in your web.xml
 ```
 <filter>
   <filter-name>fop</filter-name>
