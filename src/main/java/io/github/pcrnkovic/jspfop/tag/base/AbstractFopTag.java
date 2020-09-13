@@ -51,6 +51,17 @@ public abstract class AbstractFopTag implements FopTag {
         this.foAttributes = new HashMap<>();
         this.savedPageContextAttributes = new HashMap<>();
     }
+    
+    @SuppressWarnings({"unchecked"})
+    protected <T> T getFirstAncestorOfType(Class<T> type) {
+        if (type == null)
+            throw new NullPointerException("Argument \"type\" cannot be null.");
+        Tag ancestor = getParent();
+        while (ancestor != null && !type.isAssignableFrom(ancestor.getClass())) {
+            ancestor = ancestor.getParent();
+        }
+        return (T) ancestor;
+    }
 
     public void setPageContextAttribute(String attrName, Object attrValue) {
         if (attrName != null) {

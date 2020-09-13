@@ -1371,11 +1371,6 @@
 		</attribute>
 	</tag>
 	<tag>
-		<name>caseName</name>
-		<tag-class>io.github.pcrnkovic.jspfop.tag.CaseName</tag-class>
-		<body-content>JSP</body-content>
-	</tag>
-	<tag>
 		<name>changeBarBegin</name>
 		<tag-class>io.github.pcrnkovic.jspfop.tag.ChangeBarBegin</tag-class>
 		<body-content>JSP</body-content>
@@ -5332,6 +5327,10 @@
 		<name>multiCase</name>
 		<tag-class>io.github.pcrnkovic.jspfop.tag.MultiCase</tag-class>
 		<body-content>JSP</body-content>
+		<attribute>
+			<name>caseName</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
 		<attribute>
 			<name>caseTitle</name>
 			<rtexprvalue>true</rtexprvalue>
