@@ -9,8 +9,8 @@ Java SE 7 or above.
 Add following dependency in your web application's `pom.xml` file:
 ```
 <dependency>
-	<groupId>io.github.pcrnkovic</groupId>
-	<artifactId>jsp-fop</artifactId>
+    <groupId>io.github.pcrnkovic</groupId>
+    <artifactId>jsp-fop</artifactId>
     <version>0.9</version>
 </dependency>
 ```
