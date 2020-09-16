@@ -5,19 +5,15 @@
  */
 package io.github.pcrnkovic.jspfop.attr;
 
-import javax.servlet.jsp.tagext.Tag;
-
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public interface FopIteration {
      
-    void incrementCounter();
-    
     void setIterable(Iterable iterable);
     
-    void setIterableVar(String iterableVar);
+    void setItemVar(String iterableVar);
     
     void setItemCountVar(String itemCountVar);
 }

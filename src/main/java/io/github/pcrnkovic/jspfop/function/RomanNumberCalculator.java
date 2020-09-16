@@ -9,7 +9,7 @@ import java.util.TreeMap;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class RomanNumberCalculator {
 

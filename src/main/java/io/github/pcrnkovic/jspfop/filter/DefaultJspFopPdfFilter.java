@@ -17,13 +17,13 @@ import org.xml.sax.SAXException;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 
-public class DefaultJspFopFilter extends JspFopFilter {
+public class DefaultJspFopPdfFilter extends JspFopPdfFilter {
 
     @Override
-    protected FopFactory initFopFactory(FilterConfig config) throws ServletException {
+    protected FopFactory acquireFopFactory(FilterConfig config) throws ServletException {
         try {
             String fopConfigPath = config.getInitParameter(DEFAULT_FOP_CONFIG_PATH_PARAM);
             if (fopConfigPath == null) {

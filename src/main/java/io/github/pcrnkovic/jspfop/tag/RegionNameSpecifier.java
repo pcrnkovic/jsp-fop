@@ -11,7 +11,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class RegionNameSpecifier extends AbstractFopTag implements Rendered, RegionNameReference {
 

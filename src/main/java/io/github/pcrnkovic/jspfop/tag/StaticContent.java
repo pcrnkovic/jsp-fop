@@ -14,7 +14,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class StaticContent extends AbstractFopTag implements Rendered, Id, IndexClass, IndexKey, FlowName {
 

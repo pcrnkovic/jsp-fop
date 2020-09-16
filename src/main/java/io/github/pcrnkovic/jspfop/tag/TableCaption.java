@@ -23,7 +23,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class TableCaption extends AbstractFopTag implements 
         Rendered, CommonAccessibilityProperties, CommonAuralProperties, CommonBorderPaddingBackgroundProperties, CommonRelativePositionProperties, 

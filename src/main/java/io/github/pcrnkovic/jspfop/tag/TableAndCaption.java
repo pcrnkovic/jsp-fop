@@ -26,7 +26,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class TableAndCaption extends AbstractFopTag implements io.github.pcrnkovic.jspfop.tag.group.Block,
         Rendered, CommonAccessibilityProperties, CommonAuralProperties, CommonBorderPaddingBackgroundProperties, 

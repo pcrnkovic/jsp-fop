@@ -34,9 +34,9 @@ import org.apache.fop.apps.MimeConstants;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
-public abstract class JspFopFilter implements Filter {
+public abstract class JspFopPdfFilter implements Filter {
     
     private FopFactory fopFactory;
     private Transformer transformer;
@@ -46,7 +46,7 @@ public abstract class JspFopFilter implements Filter {
     public static final String DEFAULT_FOP_CONFIG_PATH_PARAM;
     
     static {
-        LOGGER = Logger.getLogger(JspFopFilter.class.getSimpleName());
+        LOGGER = Logger.getLogger(JspFopPdfFilter.class.getSimpleName());
         DEFAULT_FOP_CONFIG_PATH_PARAM = "fop_config_path_param";
     }
     
@@ -54,7 +54,7 @@ public abstract class JspFopFilter implements Filter {
         LOGGER.log(Level.INFO, "{0} : {1}", new Object[]{LOGGER.getName(), message});
     }
     
-    protected abstract FopFactory initFopFactory(FilterConfig config) throws ServletException;
+    protected abstract FopFactory acquireFopFactory(FilterConfig config) throws ServletException;
     
     private void initTransformer() throws ServletException {
         try {
@@ -66,7 +66,7 @@ public abstract class JspFopFilter implements Filter {
     
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        this.fopFactory = initFopFactory(filterConfig);
+        this.fopFactory = acquireFopFactory(filterConfig);
         initTransformer();
     }
     

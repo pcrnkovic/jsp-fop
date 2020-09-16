@@ -7,7 +7,7 @@ package io.github.pcrnkovic.jspfop.tag.group;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public interface Block {
     

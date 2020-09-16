@@ -37,7 +37,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class PageNumberCitation extends AbstractFopTag implements Rendered, io.github.pcrnkovic.jspfop.tag.group.Inline, 
         CommonAccessibilityProperties, CommonAuralProperties, CommonBorderPaddingBackgroundProperties, CommonFontProperties, CommonMarginPropertiesInline, 

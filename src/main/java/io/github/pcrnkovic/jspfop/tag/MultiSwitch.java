@@ -11,14 +11,14 @@ import io.github.pcrnkovic.jspfop.attr.Id;
 import io.github.pcrnkovic.jspfop.attr.CommonAccessibilityProperties;
 import io.github.pcrnkovic.jspfop.attr.IndexKey;
 import io.github.pcrnkovic.jspfop.attr.AutoRestore;
+import io.github.pcrnkovic.jspfop.attr.FopIteration;
 import io.github.pcrnkovic.jspfop.tag.base.AbstractFopIteration;
-import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
-public class MultiSwitch extends AbstractFopIteration implements Rendered, CommonAccessibilityProperties, AutoRestore, Id, IndexClass, IndexKey {
+public class MultiSwitch extends AbstractFopIteration implements FopIteration, Rendered, CommonAccessibilityProperties, AutoRestore, Id, IndexClass, IndexKey {
 
     public MultiSwitch() {
         super("multi-switch");

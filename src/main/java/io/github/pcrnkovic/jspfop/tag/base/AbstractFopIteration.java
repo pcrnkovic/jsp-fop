@@ -1,26 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
-
-<attribute>
-    <name>iterable</name>
-    <rtexprvalue>true</rtexprvalue>
-</attribute>
-<attribute>
-    <name>iterableVar</name>
-    <rtexprvalue>true</rtexprvalue>
-</attribute>
-<attribute>
-    <name>itemCountVar</name>
-    <rtexprvalue>true</rtexprvalue>
-</attribute>
-
-
- */
 package io.github.pcrnkovic.jspfop.tag.base;
 
-import io.github.pcrnkovic.jspfop.attr.FopIteration;
 import java.util.Iterator;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.IterationTag;
@@ -28,27 +7,27 @@ import javax.servlet.jsp.tagext.Tag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
-public abstract class AbstractFopIteration extends AbstractFopTag implements IterationTag, FopIteration {
+public abstract class AbstractFopIteration extends AbstractFopTag implements IterationTag {
 
     private Iterator iterator;
 
-    private String iterableVar, itemCountVar;
+    private String itemVar, itemCountVar;
 
     public AbstractFopIteration(String name) {
         super(name, false);
     }
     
     private boolean isInIterableMode() {
-        return iterator != null && iterableVar != null;
+        return iterator != null && itemVar != null;
     }
 
     @Override
     public int doStartTag() throws JspException {
-        int returnVal = super.doStartTag(); //To change body of generated methods, choose Tools | Templates.
+        int returnVal = super.doStartTag();
         if (isInIterableMode() && iterator.hasNext())
-            setPageContextAttribute(iterableVar, iterator.next());
+            setPageContextAttribute(itemVar, iterator.next());
         return returnVal;
     }
 
@@ -56,23 +35,19 @@ public abstract class AbstractFopIteration extends AbstractFopTag implements Ite
     public int doAfterBody() throws JspException {
         if (!isInIterableMode() || !iterator.hasNext())
             return SKIP_BODY;
-        setPageContextAttribute(iterableVar, iterator.next());
+        setPageContextAttribute(itemVar, iterator.next());
         return EVAL_BODY_AGAIN;
     }
 
-    @Override
     public void setIterable(Iterable iterable) {
-        
         this.iterator = iterable.iterator();
     }
 
-    @Override
-    public void setIterableVar(String iterableVar) {
-        this.iterableVar = iterableVar;
+    public void setItemVar(String itemVar) {
+        this.itemVar = itemVar;
         
     }
 
-    @Override
     public void setItemCountVar(String itemCountVar) {
         this.itemCountVar = itemCountVar;
         if (this.itemCountVar != null) {
@@ -80,7 +55,6 @@ public abstract class AbstractFopIteration extends AbstractFopTag implements Ite
         }
     }
 
-    @Override
     public void incrementCounter() {
         if (itemCountVar != null) {
             setPageContextAttribute(itemCountVar, ((Integer) getPageContextAttributeValue(itemCountVar)) + 1);
@@ -91,7 +65,7 @@ public abstract class AbstractFopIteration extends AbstractFopTag implements Ite
     public void setParent(Tag parent) {
         super.setParent(parent);
         iterator = null;
-        iterableVar = null;
+        itemVar = null;
         itemCountVar = null;
     }
     

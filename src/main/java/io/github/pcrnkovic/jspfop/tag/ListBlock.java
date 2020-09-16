@@ -28,7 +28,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopIteration;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class ListBlock extends AbstractFopIteration implements io.github.pcrnkovic.jspfop.tag.group.Block,
         Rendered, CommonAccessibilityProperties, CommonAuralProperties, CommonBorderPaddingBackgroundProperties, CommonMarginPropertiesBlock, CommonRelativePositionProperties, 

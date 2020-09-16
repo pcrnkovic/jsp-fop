@@ -5,15 +5,15 @@
  */
 package io.github.pcrnkovic.jspfop.tag;
 
+import io.github.pcrnkovic.jspfop.attr.FopIteration;
 import io.github.pcrnkovic.jspfop.attr.Rendered;
 import io.github.pcrnkovic.jspfop.tag.base.AbstractFopIteration;
-import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
-public class BookmarkTree extends AbstractFopIteration implements Rendered {
+public class BookmarkTree extends AbstractFopIteration implements Rendered, FopIteration {
 
     public BookmarkTree() {
         super("bookmark-tree");

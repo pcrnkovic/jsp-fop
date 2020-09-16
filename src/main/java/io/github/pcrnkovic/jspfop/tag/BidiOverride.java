@@ -23,7 +23,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class BidiOverride extends AbstractFopTag implements io.github.pcrnkovic.jspfop.tag.group.Inline, 
         Rendered, CommonAuralProperties, CommonFontProperties, CommonRelativePositionProperties, Color, Direction, Id, IndexClass, IndexKey, 

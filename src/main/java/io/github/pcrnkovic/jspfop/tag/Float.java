@@ -14,7 +14,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class Float extends AbstractFopTag implements 
         Rendered, io.github.pcrnkovic.jspfop.attr.Float, Clear, Id, IndexClass, IndexKey {

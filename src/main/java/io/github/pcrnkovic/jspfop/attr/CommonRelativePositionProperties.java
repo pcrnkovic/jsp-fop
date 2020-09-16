@@ -10,7 +10,7 @@ import io.github.pcrnkovic.jspfop.tag.base.FopTag;
 /**
  * 7.13
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public interface CommonRelativePositionProperties {
 

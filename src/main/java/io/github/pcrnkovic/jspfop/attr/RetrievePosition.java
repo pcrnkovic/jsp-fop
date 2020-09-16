@@ -7,7 +7,7 @@ package io.github.pcrnkovic.jspfop.attr;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public interface RetrievePosition {
     

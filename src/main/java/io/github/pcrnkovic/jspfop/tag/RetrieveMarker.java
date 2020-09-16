@@ -13,7 +13,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class RetrieveMarker extends AbstractFopTag implements 
         Rendered, RetrieveClassName, RetrievePosition, RetrieveBoundary {

@@ -15,7 +15,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class MultiToggle extends AbstractFopTag implements io.github.pcrnkovic.jspfop.tag.group.Inline,
         Rendered, CommonAccessibilityProperties, Id, IndexClass, IndexKey, SwitchTo {

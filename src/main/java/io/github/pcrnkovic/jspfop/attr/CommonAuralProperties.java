@@ -10,7 +10,7 @@ import io.github.pcrnkovic.jspfop.tag.base.FopTag;
 /**
  * 7.7
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public interface CommonAuralProperties {
 

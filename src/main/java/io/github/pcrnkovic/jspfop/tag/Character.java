@@ -40,7 +40,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class Character extends AbstractFopTag implements Rendered, io.github.pcrnkovic.jspfop.tag.group.Inline,
         CommonAuralProperties, CommonBorderPaddingBackgroundProperties, CommonFontProperties, 

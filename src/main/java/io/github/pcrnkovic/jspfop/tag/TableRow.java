@@ -25,14 +25,14 @@ import io.github.pcrnkovic.jspfop.attr.BreakAfter;
 import io.github.pcrnkovic.jspfop.attr.BreakBefore;
 import io.github.pcrnkovic.jspfop.attr.BorderAfterPrecedence;
 import io.github.pcrnkovic.jspfop.attr.BlockProgressionDimension;
+import io.github.pcrnkovic.jspfop.attr.FopIteration;
 import io.github.pcrnkovic.jspfop.tag.base.AbstractFopIteration;
-import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
-public class TableRow extends AbstractFopIteration implements 
+public class TableRow extends AbstractFopIteration implements FopIteration,
         Rendered, CommonAccessibilityProperties, BlockProgressionDimension, CommonAuralProperties, CommonBorderPaddingBackgroundProperties, CommonRelativePositionProperties, 
         BorderAfterPrecedence, BorderBeforePrecedence, BorderEndPrecedence, BorderStartPrecedence, BreakAfter, BreakBefore, Id, IndexClass, IndexKey, Height, 
         KeepTogether, KeepWithNext, KeepWithPrevious, Visibility {

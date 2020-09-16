@@ -25,7 +25,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class PageSequence extends AbstractFopTag implements 
         Rendered, Country, FlowMapReference, Format, Language, LetterValue, GroupingSeparator, GroupingSize, 

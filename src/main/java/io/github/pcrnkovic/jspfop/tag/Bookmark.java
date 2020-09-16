@@ -14,7 +14,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class Bookmark extends AbstractFopTag implements Rendered, CommonAccessibilityProperties, ExternalDestination, InternalDestination, StartingState {
 

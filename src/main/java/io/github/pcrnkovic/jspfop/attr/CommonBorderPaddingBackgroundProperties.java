@@ -9,7 +9,7 @@ import io.github.pcrnkovic.jspfop.tag.base.FopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public interface CommonBorderPaddingBackgroundProperties {
 

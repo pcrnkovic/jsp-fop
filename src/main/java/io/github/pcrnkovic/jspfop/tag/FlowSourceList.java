@@ -5,15 +5,16 @@
  */
 package io.github.pcrnkovic.jspfop.tag;
 
+import io.github.pcrnkovic.jspfop.attr.FopIteration;
 import io.github.pcrnkovic.jspfop.attr.Rendered;
 import io.github.pcrnkovic.jspfop.tag.base.AbstractFopIteration;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class FlowSourceList extends AbstractFopIteration implements 
-        Rendered {
+        Rendered, FopIteration {
 
     public FlowSourceList() {
         super("flow-source-list");

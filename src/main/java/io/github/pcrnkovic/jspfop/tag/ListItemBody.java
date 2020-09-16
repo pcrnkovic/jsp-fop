@@ -15,7 +15,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class ListItemBody extends AbstractFopTag implements 
         Rendered, CommonAccessibilityProperties, Id, IndexClass, IndexKey, KeepTogether {

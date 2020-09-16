@@ -1366,6 +1366,18 @@
 		<tag-class>io.github.pcrnkovic.jspfop.tag.BookmarkTree</tag-class>
 		<body-content>JSP</body-content>
 		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
 			<name>rendered</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -2068,6 +2080,18 @@
 		<tag-class>io.github.pcrnkovic.jspfop.tag.Declarations</tag-class>
 		<body-content>JSP</body-content>
 		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
 			<name>rendered</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -2533,6 +2557,18 @@
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
 			<name>rendered</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -2555,6 +2591,18 @@
 		<tag-class>io.github.pcrnkovic.jspfop.tag.FlowSourceList</tag-class>
 		<body-content>JSP</body-content>
 		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
 			<name>rendered</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -2563,6 +2611,18 @@
 		<name>flowTargetList</name>
 		<tag-class>io.github.pcrnkovic.jspfop.tag.FlowTargetList</tag-class>
 		<body-content>JSP</body-content>
+		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
 		<attribute>
 			<name>rendered</name>
 			<rtexprvalue>true</rtexprvalue>
@@ -4739,11 +4799,11 @@
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
-			<name>iterable</name>
+			<name>itemVar</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
-			<name>iterableVar</name>
+			<name>iterable</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
@@ -5424,6 +5484,18 @@
 		</attribute>
 		<attribute>
 			<name>indexKey</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
@@ -7785,6 +7857,18 @@
 		<tag-class>io.github.pcrnkovic.jspfop.tag.RepeatablePageMasterAlternatives</tag-class>
 		<body-content>JSP</body-content>
 		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
 			<name>maximumRepeats</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -9316,6 +9400,18 @@
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
 			<name>left</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -10440,6 +10536,18 @@
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
 			<name>left</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -10730,6 +10838,18 @@
 		</attribute>
 		<attribute>
 			<name>indexKey</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
@@ -11039,6 +11159,18 @@
 		</attribute>
 		<attribute>
 			<name>indexKey</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemCountVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>itemVar</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>iterable</name>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>

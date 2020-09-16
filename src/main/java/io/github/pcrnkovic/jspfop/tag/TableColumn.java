@@ -20,7 +20,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class TableColumn extends AbstractFopTag implements
         Rendered, CommonBorderPaddingBackgroundProperties, BorderAfterPrecedence, BorderBeforePrecedence, BorderEndPrecedence, BorderStartPrecedence, 

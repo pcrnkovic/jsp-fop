@@ -10,7 +10,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class FolioPrefix extends AbstractFopTag implements Rendered {
 

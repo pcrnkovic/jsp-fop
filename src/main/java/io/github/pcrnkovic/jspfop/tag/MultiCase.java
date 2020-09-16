@@ -17,7 +17,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class MultiCase extends AbstractFopTag implements 
         Rendered, CommonAccessibilityProperties, Id, IndexClass, IndexKey, StartingState, CaseName, CaseTitle {

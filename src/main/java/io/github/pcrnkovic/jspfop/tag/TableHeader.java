@@ -18,14 +18,14 @@ import io.github.pcrnkovic.jspfop.attr.BorderEndPrecedence;
 import io.github.pcrnkovic.jspfop.attr.BorderStartPrecedence;
 import io.github.pcrnkovic.jspfop.attr.BorderBeforePrecedence;
 import io.github.pcrnkovic.jspfop.attr.BorderAfterPrecedence;
+import io.github.pcrnkovic.jspfop.attr.FopIteration;
 import io.github.pcrnkovic.jspfop.tag.base.AbstractFopIteration;
-import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
-public class TableHeader extends AbstractFopIteration implements 
+public class TableHeader extends AbstractFopIteration implements FopIteration,
         Rendered, CommonAccessibilityProperties, CommonAuralProperties, CommonBorderPaddingBackgroundProperties, CommonRelativePositionProperties, 
         BorderAfterPrecedence, BorderBeforePrecedence, BorderEndPrecedence, BorderStartPrecedence, Id, IndexClass, IndexKey, Visibility {
 

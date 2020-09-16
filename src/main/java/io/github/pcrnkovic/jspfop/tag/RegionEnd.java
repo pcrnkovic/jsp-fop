@@ -18,7 +18,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class RegionEnd extends AbstractFopTag implements Rendered, 
         CommonBorderPaddingBackgroundProperties, Clip, DisplayAlign, Extent, Overflow, RegionName, ReferenceOrientation, WritingMode {

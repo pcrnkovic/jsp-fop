@@ -20,7 +20,7 @@ import io.github.pcrnkovic.jspfop.tag.base.AbstractFopTag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class RegionBody extends AbstractFopTag implements 
         Rendered, CommonBorderPaddingBackgroundProperties, CommonMarginPropertiesBlock, Clip, ColumnCount, ColumnGap, DisplayAlign, Overflow, RegionName, ReferenceOrientation, 

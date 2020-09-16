@@ -5,7 +5,6 @@
  */
 package io.github.pcrnkovic.jspfop.tag.base;
 
-import io.github.pcrnkovic.jspfop.attr.FopIteration;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +16,7 @@ import javax.servlet.jsp.tagext.Tag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public abstract class AbstractFopTag implements FopTag {
     
@@ -65,7 +64,7 @@ public abstract class AbstractFopTag implements FopTag {
 
     public void setPageContextAttribute(String attrName, Object attrValue) {
         if (attrName != null) {
-            if (!savedPageContextAttributes.containsKey(attrValue))
+            if (!savedPageContextAttributes.containsKey(attrName))
                 savedPageContextAttributes.put(attrName, pageContext.getAttribute(attrName));
             pageContext.setAttribute(attrName, attrValue);
         }
@@ -95,8 +94,8 @@ public abstract class AbstractFopTag implements FopTag {
         if (!rendered)
             return SKIP_BODY;
         
-        if (getParent() instanceof FopIteration) {
-            ((FopIteration) getParent()).incrementCounter();
+        if (getParent() instanceof AbstractFopIteration) {
+            ((AbstractFopIteration) getParent()).incrementCounter();
         }
         
         print("<"+this.name);

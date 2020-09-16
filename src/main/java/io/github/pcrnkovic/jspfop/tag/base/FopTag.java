@@ -9,13 +9,12 @@ import javax.servlet.jsp.tagext.Tag;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public interface FopTag extends Tag {
 
     void setFopAttribute(String attrName, String attrValue);
 
     Object getFopAttributeValue(String attrName);
-    
     
 }

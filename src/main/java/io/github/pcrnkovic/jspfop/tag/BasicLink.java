@@ -34,7 +34,7 @@ import io.github.pcrnkovic.jspfop.attr.CommonMarginPropertiesInline;
 
 /**
  *
- * @author Pavle
+ * @author Pavle Crnković
  */
 public class BasicLink extends AbstractFopTag implements io.github.pcrnkovic.jspfop.tag.group.Inline,
         CommonAccessibilityProperties, CommonAuralProperties, CommonBorderPaddingBackgroundProperties, CommonMarginPropertiesInline, CommonRelativePositionProperties, Rendered,

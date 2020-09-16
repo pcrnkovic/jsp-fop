@@ -7,7 +7,7 @@ package io.github.pcrnkovic.jspfop.attr;
 
 /**
  * 7.5
- * @author Pavle
+ * @author Pavle Crnković
  */
 public interface CommonAccessibilityProperties {
 
